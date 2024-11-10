@@ -13,7 +13,38 @@ npm install @nightmaregaurav/react-profile-picture
 
 ### Usage
 ```typescript
-import { createEndpointsAndModels } from '@nightmaregaurav/swagger-endpoints-gen';
+import React, {CSSProperties} from 'react';
+import ProfilePicture from "@nightmaregaurav/react-profile-picture";
+
+interface ProfilePhotoProps {
+  size: Exclude<CSSProperties["width"], undefined>;
+  imageUrl: string;
+  showOnlineBadge: boolean;
+  isOnline?: boolean;
+  onlineBadgeColor?: Exclude<CSSProperties["color"], undefined>;
+}
+
+const ProfilePhoto = (
+  {
+    size,
+    imageUrl,
+    showOnlineBadge,
+    isOnline = false,
+    onlineBadgeColor = "#44b700",
+  }: ProfilePhotoProps,
+) => {
+  return (
+    <ProfilePicture
+      size={size}
+      imageUrl={imageUrl}
+      showOnlineBadge={showOnlineBadge}
+      isOnline={isOnline}
+      onlineBadgeColor={onlineBadgeColor}
+    />
+  );
+};
+
+export default ProfilePhoto;
 
 ```
 
