@@ -11,4 +11,3 @@ const ProfilePicture = ({ size, imageUrl, showOnlineBadge, isOnline = false, onl
         } }));
 };
 export default ProfilePicture;
-//# sourceMappingURL=ProfilePicture.js.map
