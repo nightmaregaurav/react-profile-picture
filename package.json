@@ -1,6 +1,6 @@
 {
   "name": "@nightmaregaurav/react-profile-picture",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple react profile picture component.",
   "repository": {
     "type": "git",
@@ -37,5 +37,6 @@
   "main": "dist/index.js",
   "files": [
     "dist"
-  ]
+  ],
+  "types": "dist/types/index.d.ts"
 }
