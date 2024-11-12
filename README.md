@@ -5,6 +5,8 @@
 ### Description
 React Profile Picture is a simple and easy to use React component to display profile picture.
 
+### Demo: [CodeSandbox](https://codesandbox.io/p/sandbox/gwxwyd)
+
 ### Installation
 Install react-profile-picture
 ```bash
